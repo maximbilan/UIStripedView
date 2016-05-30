@@ -1,0 +1,2 @@
+# UIStripedView
+Striped View
