@@ -13,6 +13,7 @@
 		94AD9FB51CFD43AB002CF7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AD9FB31CFD43AB002CF7F6 /* Main.storyboard */; };
 		94AD9FB71CFD43AB002CF7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AD9FB61CFD43AB002CF7F6 /* Assets.xcassets */; };
 		94AD9FBA1CFD43AB002CF7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AD9FB81CFD43AB002CF7F6 /* LaunchScreen.storyboard */; };
+		94CCB0151CFD443D00FEDB36 /* UIStripedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CCB0141CFD443D00FEDB36 /* UIStripedView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		94AD9FB61CFD43AB002CF7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94AD9FB91CFD43AB002CF7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94AD9FBB1CFD43AB002CF7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94CCB0131CFD443D00FEDB36 /* UIStripedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStripedView.h; sourceTree = "<group>"; };
+		94CCB0141CFD443D00FEDB36 /* UIStripedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStripedView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		94AD9FA91CFD43AB002CF7F6 /* UIStripedView */ = {
 			isa = PBXGroup;
 			children = (
+				94CCB0121CFD442A00FEDB36 /* Sources */,
 				94AD9FAD1CFD43AB002CF7F6 /* AppDelegate.h */,
 				94AD9FAE1CFD43AB002CF7F6 /* AppDelegate.m */,
 				94AD9FB01CFD43AB002CF7F6 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				94AD9FAB1CFD43AB002CF7F6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94CCB0121CFD442A00FEDB36 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				94CCB0131CFD443D00FEDB36 /* UIStripedView.h */,
+				94CCB0141CFD443D00FEDB36 /* UIStripedView.m */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				94AD9FB21CFD43AB002CF7F6 /* ViewController.m in Sources */,
 				94AD9FAF1CFD43AB002CF7F6 /* AppDelegate.m in Sources */,
+				94CCB0151CFD443D00FEDB36 /* UIStripedView.m in Sources */,
 				94AD9FAC1CFD43AB002CF7F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +316,7 @@
 				94AD9FC01CFD43AB002CF7F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
