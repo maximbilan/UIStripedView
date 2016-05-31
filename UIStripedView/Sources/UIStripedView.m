@@ -10,7 +10,7 @@
 
 void MyDrawColoredPattern (void *info, CGContextRef context)
 {
-	CGRect r = CGRectMake(0, 0, 24, 24);
+	CGRect r = CGRectMake(0, 0, 5, 5);
 	
 	CGContextSetLineWidth(context, 3);
 	CGContextMoveToPoint(context, r.origin.x, r.origin.y );
