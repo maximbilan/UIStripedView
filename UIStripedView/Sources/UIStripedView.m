@@ -11,12 +11,14 @@
 void MyDrawColoredPattern (void *info, CGContextRef context)
 {
 	CGRect r = CGRectMake(0, 0, 5, 5);
+	UIColor *c = [UIColor yellowColor];
 	
 	CGContextSetLineWidth(context, 3);
 	CGContextMoveToPoint(context, r.origin.x, r.origin.y );
 	CGContextAddLineToPoint(context, r.origin.x , r.origin.y);
 	CGContextAddLineToPoint(context, r.origin.x + (r.size.width ), r.origin.y + (r.size.height));
-	CGContextSetRGBFillColor (context, .5, 0, .5, 0.5);
+	//CGContextSetRGBFillColor (context, .5, 0, .5, 0.5);
+	CGContextSetFillColorWithColor(context, c.CGColor);
 	CGContextStrokePath(context);
 }
 
@@ -26,7 +28,7 @@ void MyDrawColoredPattern (void *info, CGContextRef context)
 {
 	CGContextRef context = UIGraphicsGetCurrentContext();
  
-	UIColor * bgColor = [UIColor colorWithHue:0 saturation:0 brightness:0.15 alpha:1.0];
+	UIColor * bgColor = self.backgroundColor;
 	CGContextSetFillColorWithColor(context, bgColor.CGColor);
 	CGContextFillRect(context, rect);
  
