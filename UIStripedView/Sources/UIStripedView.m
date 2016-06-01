@@ -8,11 +8,12 @@
 
 #import "UIStripedView.h"
 
+
 void MyDrawColoredPattern (void *info, CGContextRef context)
 {
-	CGRect r = CGRectMake(0, 0, 10, 10);
-	CGContextSetLineWidth(context, 3);
-	CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+	CGRect r = CGRectMake(0, 0, 6, 6);
+	CGContextSetLineWidth(context, 2);
+	CGContextSetStrokeColorWithColor(context, [UIColor colorWithRed:0.138 green:0.139 blue:0.132 alpha:1.000].CGColor);
 	CGContextMoveToPoint(context, r.origin.x, r.origin.y);
 	CGContextAddLineToPoint(context, r.origin.x , r.origin.y);
 	CGContextAddLineToPoint(context, r.origin.x + r.size.width, r.origin.y + r.size.height);
@@ -27,8 +28,7 @@ void MyDrawColoredPattern (void *info, CGContextRef context)
 	
 	CGContextRef context = UIGraphicsGetCurrentContext();
  
-	UIColor *bgColor = self.backgroundColor;
-	CGContextSetFillColorWithColor(context, [UIColor yellowColor].CGColor);
+	CGContextSetFillColorWithColor(context, [UIColor colorWithRed:0.042 green:0.042 blue:0.045 alpha:1.000].CGColor);
 	CGContextFillRect(context, rect);
  
 	static const CGPatternCallbacks callbacks = {0, &MyDrawColoredPattern, NULL};
@@ -38,13 +38,12 @@ void MyDrawColoredPattern (void *info, CGContextRef context)
 	CGContextSetFillColorSpace(context, patternSpace);
 	CGColorSpaceRelease(patternSpace);
  
-	CGPatternRef pattern = CGPatternCreate(NULL, rect, CGAffineTransformIdentity, 10, 10, kCGPatternTilingConstantSpacing, YES, &callbacks);
+	CGPatternRef pattern = CGPatternCreate(NULL, rect, CGAffineTransformIdentity, 6, 6, kCGPatternTilingConstantSpacing, YES, &callbacks);
 	CGFloat alpha = 1.0;
 	CGContextSetFillPattern(context, pattern, &alpha);
 	CGPatternRelease(pattern);
 	CGContextFillRect(context, self.bounds);
 	CGContextRestoreGState(context);
 }
-
 
 @end

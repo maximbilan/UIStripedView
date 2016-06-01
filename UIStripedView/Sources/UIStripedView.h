@@ -10,7 +10,6 @@
 
 @interface UIStripedView : UIView
 
-@property (nonatomic, strong) UIColor *stripedBackgroundColor;
 @property (nonatomic, strong) UIColor *stripedLinesColor;
 
 @end
