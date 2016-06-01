@@ -12,26 +12,10 @@ void MyDrawColoredPattern (void *info, CGContextRef context)
 {
 	CGRect r = CGRectMake(0, 0, 10, 10);
 	CGContextSetLineWidth(context, 3);
-	
-	
-	
-	UIColor *uiColor = [UIColor yellowColor];
-	CGColorRef color = [uiColor CGColor];
-	
-	NSInteger numComponents = CGColorGetNumberOfComponents(color);
-	const CGFloat *components = CGColorGetComponents(color);
-	CGFloat red = components[0];
-	CGFloat green = components[1];
-	CGFloat blue = components[2];
-	CGFloat alpha = components[3];
-	
-	
 	CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
-	
 	CGContextMoveToPoint(context, r.origin.x, r.origin.y);
 	CGContextAddLineToPoint(context, r.origin.x , r.origin.y);
 	CGContextAddLineToPoint(context, r.origin.x + r.size.width, r.origin.y + r.size.height);
-	CGContextSetRGBFillColor(context, red, green, blue, alpha);
 	CGContextStrokePath(context);
 }
 
