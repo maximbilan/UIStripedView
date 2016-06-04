@@ -8,8 +8,7 @@
 
 #import "UIStripedView.h"
 
-
-void MyDrawColoredPattern (void *info, CGContextRef context)
+void drawColoredPattern(void *info, CGContextRef context)
 {
 	CGRect r = CGRectMake(0, 0, 6, 6);
 	CGContextSetLineWidth(context, 2);
@@ -31,7 +30,7 @@ void MyDrawColoredPattern (void *info, CGContextRef context)
 	CGContextSetFillColorWithColor(context, [UIColor colorWithRed:0.042 green:0.042 blue:0.045 alpha:1.000].CGColor);
 	CGContextFillRect(context, rect);
  
-	static const CGPatternCallbacks callbacks = {0, &MyDrawColoredPattern, NULL};
+	static const CGPatternCallbacks callbacks = {0, &drawColoredPattern, NULL};
  
 	CGContextSaveGState(context);
 	CGColorSpaceRef patternSpace = CGColorSpaceCreatePattern(NULL);
