@@ -30,6 +30,9 @@
                             <constraint firstAttribute="trailing" secondItem="Kqn-Qh-hFR" secondAttribute="trailing" id="l5h-ko-0FZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stripedView" destination="Kqn-Qh-hFR" id="Qxh-GT-Ntf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

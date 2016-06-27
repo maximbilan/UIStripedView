@@ -7,21 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "UIStripedView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIStripedView *stripedView;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
+	
+	_stripedView.stripedLinesColor = [UIColor blackColor];
 }
 
 @end
