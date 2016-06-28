@@ -21,7 +21,8 @@
 {
 	[super viewDidLoad];
 	
-	_stripedView.stripedLinesColor = [UIColor blackColor];
+//	UIStripedViewLineColor = [UIColor yellowColor];
+//	UIStripedViewBgColor = [UIColor blackColor];
 }
 
 @end

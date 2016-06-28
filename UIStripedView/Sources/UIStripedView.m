@@ -8,11 +8,15 @@
 
 #import "UIStripedView.h"
 
+UIColor *UIStripedViewLineColor;
+UIColor *UIStripedViewBgColor;
+
 void drawColoredPattern(void *info, CGContextRef context)
 {
+	UIColor *color = UIStripedViewLineColor ? UIStripedViewLineColor : [UIColor colorWithRed:0.138 green:0.139 blue:0.132 alpha:1.000];
 	CGRect r = CGRectMake(0, 0, 6, 6);
 	CGContextSetLineWidth(context, 2);
-	CGContextSetStrokeColorWithColor(context, [UIColor colorWithRed:0.138 green:0.139 blue:0.132 alpha:1.000].CGColor);
+	CGContextSetStrokeColorWithColor(context, color.CGColor);
 	CGContextMoveToPoint(context, r.origin.x, r.origin.y);
 	CGContextAddLineToPoint(context, r.origin.x , r.origin.y);
 	CGContextAddLineToPoint(context, r.origin.x + r.size.width, r.origin.y + r.size.height);
@@ -25,9 +29,10 @@ void drawColoredPattern(void *info, CGContextRef context)
 {
 	[super drawRect:rect];
 	
+	UIColor *color = UIStripedViewBgColor ? UIStripedViewBgColor : [UIColor colorWithRed:0.042 green:0.042 blue:0.045 alpha:1.000];
+	
 	CGContextRef context = UIGraphicsGetCurrentContext();
- 
-	CGContextSetFillColorWithColor(context, [UIColor colorWithRed:0.042 green:0.042 blue:0.045 alpha:1.000].CGColor);
+	CGContextSetFillColorWithColor(context, color.CGColor);
 	CGContextFillRect(context, rect);
  
 	static const CGPatternCallbacks callbacks = {0, &drawColoredPattern, NULL};

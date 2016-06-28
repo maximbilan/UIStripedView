@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIStripedView : UIView
+extern UIColor *UIStripedViewLineColor;
+extern UIColor *UIStripedViewBgColor;
 
-@property (nonatomic, strong) UIColor *stripedLinesColor;
+@interface UIStripedView : UIView
 
 @end
