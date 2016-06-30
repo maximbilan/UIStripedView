@@ -28,3 +28,7 @@ UIStripedViewBgColor = [UIColor blackColor];
 </pre>
 
 You can easily found example in this repository.
+
+## License
+
+UIStripedView is available under the MIT license. See the LICENSE file for more info.
