@@ -11,10 +11,10 @@ pod 'UIStripedView'
 </pre>
 <b>Manual</b>:
 <pre>
-<i>Just copy the following files into your project:</i>
+Just copy the following files into your project:
 
-UIStripedView.h
-UIStripedView.m
+<i>UIStripedView.h
+UIStripedView.m</i>
 </pre>
 
 ## Using
