@@ -19,7 +19,7 @@ UIStripedView.m</i>
 
 ## Using
 
-Set up <i>UIStripedView</i> in <i>Interface Builder</i> or create instance via code.
+Set up <i>UIStripedView</i> in <i>Interface Builder</i> or create instance via code.<br>
 For customizing colors please use the following code:
 
 <pre>
