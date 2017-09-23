@@ -1,6 +1,12 @@
 # UIStripedView
 
-Simple class for creating striped view.
+[![Version](https://img.shields.io/cocoapods/v/UIStripedView.svg?style=flat)](http://cocoadocs.org/docsets/UIStripedView)
+[![License](https://img.shields.io/cocoapods/l/UIStripedView.svg?style=flat)](http://cocoadocs.org/docsets/UIStripedView)
+[![Platform](https://img.shields.io/cocoapods/p/UIStripedView.svg?style=flat)](http://cocoadocs.org/docsets/UIStripedView)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/UIStripedView.svg)](https://cocoapods.org/pods/UIStripedView)
+[![CocoaPods](https://img.shields.io/cocoapods/dm/UIStripedView.svg)](https://cocoapods.org/pods/UIStripedView)
+
+Simple class for creating a striped view.
 
 ![alt tag](https://raw.github.com/maximbilan/UIStripedView/master/img/1.png)
 
