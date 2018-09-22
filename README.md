@@ -25,7 +25,7 @@ UIStripedView.m</i>
 
 ## Using
 
-Set up <i>UIStripedView</i> via <i>Interface Builder</i> or create instance via the code.<br>
+Set up <i>UIStripedView</i> via <i>Interface Builder</i> or create an instance via the code.<br>
 For customizing colors please use the following code:
 
 <pre>
@@ -33,7 +33,7 @@ UIStripedViewLineColor = [UIColor yellowColor];
 UIStripedViewBgColor = [UIColor blackColor];
 </pre>
 
-You can easily found example in this repository.
+You can easily found the example in this repository.
 
 ## License
 
